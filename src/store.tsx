@@ -113,6 +113,7 @@ const useGardenSetup = () => {
         "http://localhost:30000"
       );
 
+      //For localnet replace url value with - http://localhost:8080
       const orderbook = await Orderbook.init({
         url: "https://orderbook-testnet.garden.finance/",
         signer: signer,

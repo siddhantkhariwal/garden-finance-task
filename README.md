@@ -1,4 +1,4 @@
-#Garden-Finance-Task on testnet
+**Garden-Finance-Task on testnet**
 
 Key Features
 - IMPROVED UI/UXFeatures an improved user interface for a better overall experience.
@@ -6,6 +6,19 @@ Key Features
 - Swap Functionality: Easily execute swaps from WBTC to BTC.
 - Transaction Tracking: Monitor and display the most recent transactions.
 - Garden SDK Utilization: Integrates the Garden SDK to perform swaps efficiently.
+
+**Garden-Finance-Task on localnet**
+
+For localnet in store.tsx -> orderbook replace url value with - http://localhost:8080
+- Ex -  const orderbook = await Orderbook.init({
+        url: "http://localhost:8080",
+        signer: signer,
+        opts: {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          domain: (window as any).location.host,
+          store: localStorage,
+        },
+      });
 
 
 STEPS - 
